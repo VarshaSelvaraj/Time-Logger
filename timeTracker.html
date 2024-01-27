@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./timeTracker.css">
+</head>
+
+<body>
+    <!-- Input Fields -->
+    <h2 class="head">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Tracker</h2>
+    <input type="text" id="task" class="input" name ="task" placeholder="Task"><br/><br/>
+    <input type="text" id="desc" class="input" name="desc" placeholder="Description">
+    <!-- Timer -->
+    <div class="timer">
+        <!-- Timer control -->
+        <div class="timer-control" id="control">Start</div>
+        &nbsp; &nbsp;
+
+        <p class="time" id="hour">00</p>
+        <p class="time">:</p>
+        <p class="time" id="min">00</p>
+        <p class="time">:</p>
+        <p class="time" id="sec">00</p>
+    </div>
+
+    <!-- Entries -->
+    <div class="entries" id="entries">
+        <table id ="add">
+        <tr>
+        <th class="ent">Task</th>
+        <th class="ent">Description</th>
+        <th class="ent">Duration</th>
+        </tr>
+        </table>
+
+        <!-- You should add entries here dynamically using JS -->
+    </div>
+</body>
+
+<script src="./timeTracker.js"></script>
+
+</html>
